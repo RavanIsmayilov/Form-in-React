@@ -1,0 +1,145 @@
+.btn{
+  padding: 12px;
+  width: 414px;
+  background-color: rgb(239, 73, 143);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  border-top: 10px;
+}
+
+.form{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+/* .form_into{
+  
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  width: 450px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+} */
+
+.email{
+  padding: 12px;
+  width: 387px;
+  border-radius: 8px;
+  border-style:groove;
+  border: 1px solid #ccc;
+  margin-bottom: 17px;
+  margin-top: 10px;
+}
+
+.password{
+  padding: 12px;
+  width: 387px;
+  border-radius: 8px;
+  border-style:groove;
+  border: 1px solid #ccc;
+  margin-bottom: 17px;
+  margin-top: 10px;
+  
+}
+
+.birthday{
+  padding: 12px;
+  width: 387px;
+  border-radius: 8px;
+  border-style:groove;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+
+  margin-bottom: 17px;
+}
+
+.images{
+  display: flex;
+  margin-right: 15%;
+  width: 140px;
+}
+
+.error_email {
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 11.8%;
+  margin-bottom: 10px;
+
+
+}
+.error_password {
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10%;
+  margin-bottom: 10px;
+
+}
+
+.error_birthday{
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+
+
+.error_terms{
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  margin: 24px 0px 0px 3.9px;
+}
+
+.error_gender{
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+
+
+
+
+
+.section_email{
+  display: flex;
+  flex-direction: column;
+}
+
+.section_password{
+  display: flex;
+  flex-direction: column;
+}
+
+.section_birthday{
+  display: flex;
+  flex-direction: column;
+}
+
+.section_terms{
+  display: flex;
+  margin: 0px 14.8% 25px 0px;
+}
+
+.section_gender{
+  position: absolute;
+  left: 53%;
+}
+
+
