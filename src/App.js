@@ -65,12 +65,18 @@ function App() {
     setGenderError("")
     setBirthdayError("")
 
+    const allowedDomains = ["@gmail.com", "@yandex.ru", "@mail.com"]
+
+    const isValidEmail = allowedDomains.some(domain => email.includes(domain))
     
     if(email.trim() === ""){
       setemailError("PLeae fill the email field")
     }
-      else if(!email.includes("@")){
-        setemailError("Please enter @ symbol")
+      else if(isValidEmail){
+        setemailError("Email address is correctly")
+      }else{
+        setemailError("Email address is not correctly")
+
       }
     
     
@@ -86,12 +92,12 @@ function App() {
       setGenderError("Please choose a gender")
     }
 
-    if(!birthdayError){
+    if(!birthday){
       setBirthdayError("Please note your birthdate")
     }
 
     }
-
+    
 
   return (
 
@@ -113,10 +119,10 @@ function App() {
     <div className='section_password'> 
       <label htmlFor="password">Password</label> 
       <input className="password" 
-      name = "password" type = "text"
+      name = "password" type = "password"
       onChange={handlePasswordChange} 
       defaultValue={password} /> 
-      <span className='error_password'>{PasswordError.includes("Weak") ? "Weak Password" : "Strong Password"}</span> 
+      <span className='error_password'>{PasswordError}</span> 
     </div>
 
       {/* <label htmlFor='ageRange'>Age:</label>
@@ -131,7 +137,7 @@ function App() {
 
     <div className='section_birthday'>
       <label htmlFor="birthday">Birthday</label> 
-      <input type="date" className="birthday" name="birthday" onChange={(e) => setBirthday(e.target.value)} />
+      <input type="date" className="birthday" name="birthday" onInput={(e) => setBirthday(e.target.value)} />
       <span className='error_birthday'>{birthdayError}</span> 
 
     </div>
